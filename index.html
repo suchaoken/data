@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script >
+    //简单数据类型，复制是开辟新空间
+    var a =1
+    b=a
+    b=2
+    console.log(a);
+    console.log(b);
+    
+    //复杂数据类型，复制是复制指针，指向同一个空间
+    var c={
+        name:'zhangsan',
+        age:'18'
+    }
+    var d =c
+    d.name='lisi'
+    console.log(c.name);
+
+    //vue的单向数据流，从父组件深拷贝一份到子组件，父组件变化时就重新浅拷贝一次，子组件变化没有影响父组件（浅拷贝），return原因
+</script>
+</html>
